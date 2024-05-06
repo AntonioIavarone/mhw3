@@ -1,0 +1,323 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.nascosto{
+    display: none;
+}
+
+.btn {
+    color: white;
+    background-color: #0067b8;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+/*  BARRA   */
+.container {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 80%;
+}
+
+.testa {
+    height: 75px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icone {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner img{
+   width: 100%;
+   height: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+#barra{
+    width: 60%;
+    padding: 2%;
+}
+
+#barra input{
+    width: 80%;
+    height:20px;
+}
+
+
+@media (max-width:500px){
+    
+    .testa{
+        display: none;
+    }
+    .icone{
+        font-size: 80%;
+    }
+    .logo{
+       align-items: center;
+       width:150px;
+    }
+    .menu{
+        display: inline-block;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .menu div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+        }
+}
+/*   BANNER  */
+
+.banner{
+    max-width:100%;
+    background-image: url(immagini/Highlight-Surface-Pro-1920x600.avif);
+    height:600px;
+}
+
+.testo-su-immagine{
+    top: 15%; 
+    left: 5%; 
+    width: 500px;
+    max-height: auto;
+    position: relative;
+    background-color: white;
+    padding:48px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* PRODOTTO - INFORMAZIONI GENERALI*/
+
+.prodotto{
+    display: flex;
+    height:600px;
+    flex-direction: column;
+    margin-top:60px;
+    
+}
+
+.contenitore{
+    height:65%;
+    width: 92%;
+    left:5%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.container2{
+    height:30%;
+    width: 89.4%;
+    left:5%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0px 24px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.immagine{
+    height:100%;
+    width:auto;
+}
+
+.descrizione{
+    width:auto;
+    height:100%;
+    padding: 0px 12px;
+}
+
+.compra{
+    width:60%;
+    height:100%;
+    padding:0px 12px;
+}
+
+/* SPECIFICHE TECNICHE */
+
+.specifiche{
+    height: 2000px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.elenco{
+    height:99%;
+    width:100%;
+    display:flex;
+}
+
+.left{
+    display:flex;
+    width: 50%;
+    height:auto;
+    flex-wrap: wrap;   
+}
+
+.right{
+    display:flex;
+    width: 50%;
+    height:auto;
+    flex-wrap: wrap;
+}
+
+.nome{
+    background-color: rgb(238, 238, 238);
+    border-bottom:1px solid grey;
+    width:50%;
+   
+    
+}
+
+.caratteristiche{
+    display: flex;
+    flex-direction: column;
+    width:48%;
+    justify-content: center;
+    max-height: auto;
+    border-bottom:1px solid grey;
+    padding-left:16px;
+}
+
+/* FOOTER */
+
+.foot{
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(229, 229, 229);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    width: 16%;
+    justify-content: space-around;
+}
+
+.head{
+    text-align:left;
+    color:rgb(60, 60, 60);
+    font-size:15px;
+    padding:3%;
+}
+
+.lista{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3%;
+    line-height: 30px;
+    font-size: 11px;
+    color:grey;
+}
+
+.base{
+    height: 75px;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.base a{
+    font-size: 11px;
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+
+.newsletter{
+    padding:0px;
+    background-color: rgb(229, 229, 229);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+}
+
+h1{
+    margin:0px;
+    color:rgb(60, 60, 60);
+}
+
+#iscrizione{
+    margin-left: 30px;
+    border: 0px;
+}
+
+.btn2{
+    color: white;
+    background-color: #0067b8;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top:100px;
+}
+
+#buttons{
+    width: 50%;
+    height: 50%;
+    margin:auto;
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .foot{
+        flex-direction: column;
+        height:auto;
+    }
+    .box{
+        width:auto;
+    }
+    .base {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+    }
+
+    .base a{
+        width:auto;
+        font-size: 70%;
+        padding:1%;
+    }
+}

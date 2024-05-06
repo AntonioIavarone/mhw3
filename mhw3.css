@@ -1,0 +1,442 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nascosto{
+    display: none;
+}
+
+.container {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 80%;
+}
+
+.testa {
+    height: 75px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icone {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner img{
+   width: 100%;
+   height: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+#barra{
+    width: 60%;
+    padding: 2%;
+}
+
+#barra input{
+    width: 80%;
+    height:20px;
+}
+
+
+@media (max-width:500px){
+    
+    .testa{
+        display: none;
+    }
+    .icone{
+        font-size: 80%;
+    }
+    .logo{
+       align-items: center;
+       width:150px;
+    }
+    .menu{
+        display: inline-block;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .menu div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+        }
+}
+
+/*TESTO SU IMMAGINI*/
+
+#banner{
+    border: 3px solid white;
+    height: 440px;
+    background-image: url(immagini/banner_1.jpeg);
+    background-position-y: -100px;
+    padding-left:5%;
+}
+
+
+
+#banner2{
+    border: 3px solid white;
+    height: 440px;
+    background-image: url(immagini/Highlight-Surface-Pro-9-Sapphire-angle_VP5-1920x600.avif);
+    background-position-y: -90px;
+    background-position-x: -100px;
+    padding-left:5%;
+}
+
+
+.text-on-image{
+    width:30%;
+    margin-top:8%;
+}
+
+.text-on-image h1{
+    font-size:36px;
+}
+
+.slider{
+   
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#destra{
+    background-image: url('immagini/pulsanteSx.JPG') ;
+    background-size: cover;
+    border:none;
+}
+
+#sinistra{
+    background-image: url('immagini/pulsanteSx.JPG') ;
+    background-size: cover;
+    border:none;
+}
+
+
+@media(max-width:500px){
+    .banner{
+        background-image: url(immagini/banner_1.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-position-x: 550px;
+        padding-left: 0px;
+        
+    }
+    .text-on-image{
+        height:200px;
+        width:100%;
+        font-size: 75%;
+        margin-top: 85%;
+        border: 1px solid lightgray;
+    }
+    .text-on-image h1{
+        font-size: 250%;
+    }
+}
+
+/* IMMAGINE XBOX*/
+
+.xbox{
+    height:400px;
+}
+
+.img{
+    height: 100%;
+    width:90%;
+    background-image: url(immagini/Highlight-Xbox-Series-S-1TB-Black-002_VP4-1260x600.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-on-image2{
+    width:30%;
+    margin-top:8%;
+    margin-left:8%;
+}
+
+@media(max-width:500px){
+    .xbox{
+        height:450px;
+    }
+    .img{
+        height:250px;
+        background-position-x: auto;
+    }
+    .text-on-image2{
+        height:150px;
+        width:100%;
+        font-size: 75%;
+        margin-top: 60%;
+        margin-left:0%;
+        
+    }
+}
+
+/* 4 IMMAGINI CENTRALI*/
+
+.middle {
+    height: 150px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.row{
+    display: flex;
+    padding:24px;
+}
+
+.middle div{
+    height: 100px;
+    width: 85%;
+}
+
+.image{
+    height: 30px;
+    width:30px;
+}
+
+.row div{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .row{
+        
+        display: flex;
+        padding:24px;
+        flex-direction: column;
+        margin-top:30px;
+    }
+    .middle {
+        margin-top:150px;
+        height:320px;
+    }
+    .row div{
+        line-height: 40px;
+    }
+    .middle div{
+        width: auto;
+    }
+}
+
+/* 4 DIV CONSUMATORI*/
+
+.consumer{
+    height: 585px;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    margin:40px;
+}
+
+
+.consumer div{
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px;
+    border: 1px solid lightgray;
+}
+
+.overlay{
+    position:absolute;
+    left:0px;
+    top:-75px;
+}
+
+.image2{
+    width:100%;
+    height:200px;
+}
+
+.btn {
+    color: white;
+    background-color: #0067b8;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+@media (max-width:500px){
+    .consumer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .consumer div{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        margin-bottom:9%;
+        padding-bottom: 10%;
+    }
+
+}
+
+/*IMMAGINE GRANDE*/
+
+.xbox{
+    display: flex;
+    justify-content: center;
+}
+
+.xbox img{
+    width: 70%;
+    height: 100%;
+    margin: 3%;
+}
+
+
+/*   NOTIZIE DA MICROSOFT   */
+
+.news{
+    height:auto;
+    padding:0% 12%;
+}
+
+.notizie{
+    height:99%;
+    border: 1px solid lightgray;
+}
+
+.lista2{
+    margin-left:25%;
+    font-size: 18px; 
+}
+
+/* FOOTER */
+
+.foot{
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(229, 229, 229);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    width: 16%;
+    justify-content: space-around;
+}
+
+.head{
+    text-align:left;
+    color:rgb(60, 60, 60);
+    font-size:15px;
+    padding:3%;
+}
+
+.lista{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3%;
+    line-height: 30px;
+    font-size: 11px;
+    color:grey;
+}
+
+.base{
+    height: 75px;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.base a{
+    font-size: 11px;
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+
+.newsletter{
+    padding:0px;
+    background-color: rgb(229, 229, 229);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+}
+
+h1{
+    margin:0px;
+    color:rgb(60, 60, 60);
+}
+
+#iscrizione{
+    margin-left: 30px;
+    border: 0px;
+}
+
+.btn2{
+    color: white;
+    background-color: #0067b8;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top:100px;
+}
+
+#buttons{
+    width: 50%;
+    height: 50%;
+    margin:auto;
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .foot{
+        flex-direction: column;
+        height:auto;
+    }
+    .box{
+        width:auto;
+    }
+    .base {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+    }
+
+    .base a{
+        width:auto;
+        font-size: 70%;
+        padding:1%;
+    }
+}
